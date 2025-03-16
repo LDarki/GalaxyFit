@@ -3,6 +3,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Euler, Group } from "three";
+
 import Background from "@/assets/img/background.png";
 
 const rotations = [
@@ -11,7 +12,10 @@ const rotations = [
   new Euler(0, Math.PI / 2, -Math.PI / 4),
 ];
 
-const RotatingModel = ({ gltf, index }) => {
+const RotatingModel: React.FC<{ gltf: any; index: number }> = ({
+  gltf,
+  index,
+}) => {
   const modelRef = useRef<Group | null>(null);
   const [windowIsActive, setWindowIsActive] = useState(1);
 
@@ -24,7 +28,7 @@ const RotatingModel = ({ gltf, index }) => {
     };
   });
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (!windowIsActive) return;
     if (modelRef.current) {
       modelRef.current.rotation.x +=

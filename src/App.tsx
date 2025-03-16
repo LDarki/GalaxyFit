@@ -48,7 +48,7 @@ const faqs = [
 function App() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const contentRefs = useRef([]);
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
   const scrollRef = useRef(null);
 
   useEffect(() => {
