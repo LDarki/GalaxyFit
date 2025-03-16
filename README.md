@@ -2,6 +2,8 @@
 
 A visually stunning and responsive fitness website built with **React**, inspired by the elegant design of [this concept](https://www.instagram.com/p/DE5TcpcA3OP/) by [DesignWithMikey](https://www.instagram.com/designwithmikey/).
 
+You can see it [here](https://ldarki.github.io/GalaxyFit/).
+
 ## ✨ Features
 
 - 🚀 **Vite-powered** React app for ultra-fast development and build speeds
@@ -38,7 +40,7 @@ This project is heavily inspired by [DesignWithMikey's](https://www.instagram.co
 
 ```bash
 git clone https://github.com/LDarki/GalaxyFit.git
-cd galaxyfit
+cd GalaxyFit
 ```
 
 ### 2. Install dependencies
